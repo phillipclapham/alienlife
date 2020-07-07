@@ -1,0 +1,479 @@
+body {
+  background: rgba(1,2,26,1);
+}
+
+.workBox {
+  background: linear-gradient(45deg, rgba(1,2,26,1) 0%, rgba(3,16,156,1) 100%);
+  position: relative;
+  width: 400px;
+  height: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black,
+              -5px -5px 5px black,
+              -5px 5px 5px black,
+              5px -5px 5px black;
+  z-index: 0;
+}
+
+.alienBox {
+  position: absolute;
+  width: 74%;
+  height: 74%;
+  top: -45%;
+  left: 12.5%;
+  z-index: 1;
+}
+
+.ufoBeam {
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  bottom: -95%;
+  left: 0%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(250,237,92,1) 0%, rgba(255,183,0,1) 12%, rgba(250,237,92,1) 31%, rgba(252,196,53,1) 41%, rgba(248,181,0,1) 51%, rgba(252,196,53,1) 64%, rgba(255,183,0,1) 85%, rgba(255,205,79,1) 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.beamText {
+  opacity: 0.9;
+  position: relative;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: .75em;
+  text-align: center;
+  top: 55%;
+  transform: translatey(-50%);
+  text-shadow: 2px 2px 5px white,
+              -2px -2px 5px white,
+              -2px 2px 5px white,
+              2px -2px 5px white;
+}
+
+.ufoBase {
+  position: absolute;
+  background: linear-gradient(to right, rgba(20,20,20,1) 0%, rgba(44,44,44,1) 23%, rgba(79,78,79,1) 51%, rgba(44,44,44,1) 77%, rgba(20,20,20,1) 100%);
+  width: 94.33%;
+  height: 10%;
+  bottom: 5%;
+  left: 2.5%;
+  border: 2px solid black;
+  border-radius: 25%;
+  z-index: 1;
+  box-shadow: 2px 2px 5px yellow,
+              -2px -2px 5px yellow,
+              -2px 2px 5px yellow,
+              2px -2px 5px yellow;
+}
+
+.ufoFront {
+  position: absolute;
+  background: linear-gradient(45deg, rgba(117,117,117,1) 0%, rgba(82,82,82,1) 23%, rgba(204,204,204,1) 51%, rgba(82,82,82,1) 77%, rgba(117,117,117,1) 100%);
+  width: 100%;
+  height: 65%;
+  top: 0%;
+  left: -0.5%;
+  border: 1px solid black;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  z-index: 1;
+}
+
+.cockpit {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  top: 30%;
+  left: 25%;
+  background: black;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.windscreen {
+  opacity: 0.3;
+  position: absolute;
+  width: 60%;
+  height: 400%;
+  bottom: 10%;
+  left: 19%;
+  background: linear-gradient(45deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%);
+  border: 2px solid black;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  z-index: 3;
+  box-shadow: 2px 2px 5px yellow,
+              -2px -2px 5px yellow,
+              -2px 2px 5px yellow,
+              2px -2px 5px yellow;
+}
+
+.alienBody {
+  position: absolute;
+  width: 20%;
+  height: 200%;
+  bottom: 35%;
+  left: 39%;
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border: 2px solid black;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  z-index: 2;
+}
+
+.mouth {
+  position: absolute;
+  width: 25%;
+  height: 40%;
+  top: 30%;
+  left: 35.5%;
+  background: rgba(105,1,76,1);
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.innerMouth {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background: black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.alienNeck1 {
+  position: absolute;
+  z-index: 2;
+  width: 20%;
+  height: 50%;
+  top: -50%;
+  right: 7%;
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border: 2px solid black;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(15deg);
+  z-index: 2;
+}
+
+.alienNeck2 {
+  position: absolute;
+  z-index: 2;
+  width: 20%;
+  height: 50%;
+  top: -50%;
+  left: 7%;
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border: 2px solid black;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(-15deg);
+  z-index: 2;
+}
+
+.alienHead1 {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: -75%;
+  right: -15%;
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.alienHead2 {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: -75%;
+  left: -15%;
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.eye {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 10%;
+  left: 9%;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.pupil {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 15%;
+  right: 20%;
+  background: black;
+  border-radius: 50%;
+}
+
+.arm1 {
+  position: absolute;
+  width: 10%;
+  height: 65%;
+  bottom: 2%;
+  left: 20%;
+  transform: rotate(-7deg);
+  background: linear-gradient(97deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 0px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 25%;
+  z-index: 2;
+}
+
+.arm2 {
+  position: absolute;
+  width: 10%;
+  height: 65%;
+  bottom: 2%;
+  right: 20%;
+  transform: rotate(7deg);
+  background: linear-gradient(97deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 0px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 25%;
+  z-index: 2;
+}
+
+.arm3 {
+  position: absolute;
+  width: 10%;
+  height: 65%;
+  bottom: 5%;
+  left: -20%;
+  transform: rotate(-15deg);
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 0px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 25%;
+  z-index: 2;
+}
+
+.arm4 {
+  position: absolute;
+  width: 10%;
+  height: 65%;
+  bottom: 3%;
+  right: -20%;
+  transform: rotate(15deg);
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 0px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 25%;
+  z-index: 2;
+}
+
+.arm5 {
+  position: absolute;
+  width: 10%;
+  height: 65%;
+  bottom: 5%;
+  left: -50%;
+  transform: rotate(-25deg);
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 0px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 25%;
+  z-index: 2;
+}
+
+.arm6 {
+  position: absolute;
+  width: 10%;
+  height: 65%;
+  bottom: 4%;
+  right: -50%;
+  transform: rotate(25deg);
+  background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 0px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 25%;
+  z-index: 2;
+}
+
+.underarm1 {
+  position: absolute;
+  width: 110%;
+  height: 15%;
+  bottom: -15%;
+  left: -45%;
+  background: linear-gradient(95deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  transform: rotate(5deg);
+  z-index: 2;
+}
+
+.underarm2 {
+  position: absolute;
+  width: 110%;
+  height: 15%;
+  bottom: -15%;
+  right: -45%;
+  background: linear-gradient(95deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  transform: rotate(-5deg);
+  z-index: 2;
+}
+
+.underarm3 {
+  position: absolute;
+  width: 110%;
+  height: 15%;
+  bottom: -20%;
+  left: -55%;
+  background: linear-gradient(95deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  transform: rotate(15deg);
+  z-index: 2;
+}
+
+.underarm4 {
+  position: absolute;
+  width: 110%;
+  height: 15%;
+  bottom: -15%;
+  right: -45%;
+  background: linear-gradient(95deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  transform: rotate(-15deg);
+  z-index: 2;
+}
+
+.underarm5 {
+  position: absolute;
+  width: 110%;
+  height: 15%;
+  bottom: -20%;
+  left: -60%;
+  background: linear-gradient(95deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  transform: rotate(25deg);
+  z-index: 2;
+}
+
+.underarm6 {
+  position: absolute;
+  width: 110%;
+  height: 15%;
+  bottom: -15%;
+  right: -60%;
+  background: linear-gradient(95deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border-top: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  transform: rotate(-25deg);
+  z-index: 2;
+}
+
+.armtip1 {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  top: -70%;
+  left: -130%;
+  background: linear-gradient(95deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border: 2px solid black;
+  border-radius: 40%;
+  transform: rotate(-25deg);
+}
+
+.armtip2{
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  top: -70%;
+  right: -130%;
+  background: linear-gradient(95deg, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border: 2px solid black;
+  border-radius: 40%;
+  transform: rotate(25deg);
+}
+
+.hand {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: -10%;
+  left: -22%;
+  background: radial-gradient(ellipse at center, rgba(203,96,179,1) 0%, rgba(179,2,135,1) 10%, rgba(204,26,159,1) 21%, rgba(105,1,76,1) 51%, rgba(204,26,159,1) 77%, rgba(179,2,135,1) 89%, rgba(219,54,164,1) 100%);
+  border: 2px solid black;
+  border-radius: 50%;
+}
